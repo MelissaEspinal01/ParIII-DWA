@@ -1,0 +1,141 @@
+@font-face {
+    font-family: 'Semplicita';
+    src: url('../fonts/SemplicitaPro.otf') format('opentype'),
+         url('../fonts/semplicitapro-webfont.woff') format('woff'),
+         url('../fonts/semplicitapro-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Semplicita-bold';
+    src: url('../fonts/SemplicitaPro-Bold.otf') format('opentype'),
+         url('../fonts/semplicitapro-bold-webfont.woff') format('woff'),
+         url('../fonts/semplicitapro-bold-webfont.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Semplicita', sans-serif;
+}
+
+body {
+    font-family: 'Semplicita', sans-serif;
+
+}
+
+h2, h5{
+    font-family: 'Semplicita-bold', sans-serif;
+}
+
+div.banner h1{
+    font-family: 'Semplicita-bold', sans-serif;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+header ul li a:hover,
+header ul li a.active
+{
+    background: #fff;
+    color: #0e0e0e;
+}
+
+/* Bootstrap Estilos */
+.banner {
+    background-color: #1a4475;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.section-title {
+    color: #1a4475;
+    margin-bottom: 20px;
+}
+
+.carousel-item {
+    text-align: center;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    background-color: #fbc625;
+    color: #1a4475;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+div.proyectos .card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+div.proyectos .card:hover {
+    transform: scale(1.05);
+}
+
+.btn-dark {
+    background: #2c3e50;
+    color: #fff;
+    border: none;
+}
+
+.btn-dark:hover {
+    background: #34495e;
+}
+
